@@ -5,5 +5,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="label_auto_silent_mode">Auto Silent Mode</string>
+    <string name="msg_ok">OK</string>
+    <string name="msg_initialize_database">Initializing Database..</string>
+    <string name="title_error">Error:</string>
+    <string name="msg_error_init_database">Error while initializing the database, please restart the application.</string>
 
 </resources>

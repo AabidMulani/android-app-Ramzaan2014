@@ -1,4 +1,4 @@
-package com.shuraidinfotech.ramzaan2014;
+package com.shuraidinfotech.ramzaan2014.activity;
 
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBar;
@@ -6,6 +6,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.shuraidinfotech.ramzaan2014.R;
 
 
 public class MainActivity extends ActionBarActivity {
