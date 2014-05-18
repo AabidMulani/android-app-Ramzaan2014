@@ -19,6 +19,7 @@ public class MainActivity extends ActionBarActivity {
         ActionBar actionBar=getSupportActionBar();
         if(actionBar!=null){
             actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.theme_text_color)));
+            actionBar.setIcon(new ColorDrawable(0));
         }
     }
 
