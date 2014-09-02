@@ -2,6 +2,7 @@ package com.shuraidinfotech.ramzaan2014.utils;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.widget.Toast;
 
@@ -12,7 +13,7 @@ import com.shuraidinfotech.ramzaan2014.R;
  */
 public class Utils {
 
-    public static void showToast(Activity activity, String msg) {
+    public static void showToast(Context activity, String msg) {
         Toast.makeText(activity, msg, Toast.LENGTH_LONG).show();
     }
 
