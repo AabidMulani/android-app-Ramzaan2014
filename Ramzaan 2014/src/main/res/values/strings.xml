@@ -9,5 +9,16 @@
     <string name="msg_initialize_database">Initializing Database..</string>
     <string name="title_error">Error:</string>
     <string name="msg_error_init_database">Error while initializing the database, please restart the application.</string>
+    <string name="label_start_time">Start Time:</string>
+    <string name="label_end_time">End Time:</string>
+    <string name="name_fazr">FAZR</string>
+    <string name="name_isha">ISHA</string>
+    <string name="name_magrib">MAGRIB</string>
+    <string name="name_ASR">ASR</string>
+    <string name="name_zohr">ZOHR</string>
+    <string name="error_endtime_smaller">End time should be greater than Start Time.</string>
+    <string name="title_start_time">Start Time:</string>
+    <string name="title_end_time">End Time:</string>
+    <string name="msg_processing">Processing..</string>
 
 </resources>

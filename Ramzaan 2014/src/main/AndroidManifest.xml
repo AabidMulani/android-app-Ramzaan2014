@@ -1,21 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.shuraidinfotech.ramzaan2014" >
+    package="com.shuraidinfotech.ramzaan2014">
+
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:name=".BaseApplication"
+        android:theme="@style/AppTheme">
+
         <activity
             android:name=".activity.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".activity.AutoProfileActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <receiver android:name=".services.BootCompletedIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".services.AlarmSetter" />
+
+        <service android:name=".services.ChangeProfile" />
+
+        <receiver android:name=".services.MyReceiver"/>
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="ramzaan2014.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="false" />
+
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.shuraidinfotech.ramzaan2014.datamodels" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
     </application>
 
 </manifest>

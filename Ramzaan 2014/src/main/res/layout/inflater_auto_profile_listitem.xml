@@ -1,6 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="FAZR"
+        android:padding="5dp"
+        android:id="@+id/text_view_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/label_start_time"
+        android:id="@+id/text_view_start_label"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/text_view_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="5:15 AM"
+        android:paddingLeft="5dp"
+        android:id="@+id/text_view_start_value"
+        android:layout_alignTop="@+id/text_view_start_label"
+        android:layout_toRightOf="@+id/text_view_start_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/label_end_time"
+        android:paddingLeft="5dp"
+        android:id="@+id/text_view_end_label"
+        android:layout_below="@+id/text_view_start_label"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/text_view_start_value" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="5:45 AM"
+        android:paddingLeft="5dp"
+        android:id="@+id/text_view_end_value"
+        android:layout_alignTop="@+id/text_view_end_label"
+        android:layout_toRightOf="@+id/text_view_end_label" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/toggleButton"
+        android:focusable="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
